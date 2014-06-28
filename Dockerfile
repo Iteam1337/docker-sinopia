@@ -10,4 +10,4 @@ RUN adduser --disabled-password --gecos "" sinopia
 RUN chown sinopia storage
 USER sinopia
 EXPOSE 4873
-CMD ["/usr/local/bin/sinopia"]
+CMD ["/usr/local/bin/sinopia", "-c /config.yaml"]
